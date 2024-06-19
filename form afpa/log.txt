@@ -1,0 +1,34 @@
+<?php
+session_start();
+
+$user = [
+    'name' => null,
+    'email' => null,
+    'tel' => null,
+    'situation' => null,
+];
+
+$prénom = $_POST['name'];
+print $prénom;
+
+
+if (isset($_POST['submit'])) {
+    if (!isset($_POST['name']) || ($_POST['email']) || ($_POST['tel']) || ($_POST['situation'])) {
+        print 'Il manque des informations!';
+        session_destroy();
+    } else {
+        $_SESSION['name'] = $_POST['name'];
+    }
+    if (isset($_SESSION['name'])) {
+        print 'Bonjour ' . $user['name'] . '' . $user['email'] . '' . $user['situation'];
+        //$user['name'] = $_POST['name'];
+        //$user['email'] = $_POST['email'];
+        //$user['tel'] = $_POST['tel'];
+        //$user['situation'] = $_POST['situation'];
+    }
+} else {
+    print 'Hop hop mon garçon!';
+}
+
+
+?>

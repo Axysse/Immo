@@ -1,0 +1,129 @@
+body {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 1%;
+}
+
+img {
+    height: 20vh;
+    width: 35vh;
+}
+
+form {
+    padding-top: 1em;
+    border: solid #219021 2px;
+    border-radius: 10px;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+}
+
+.panneau_1 {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.panneau_1  input {
+    height: 2.5em;
+    width: 32.1em;
+}
+
+#situation {
+    height: 3em;
+    width: 32.7em;
+    background-color: white;
+    border: solid 1px;
+}
+
+.panneau_1 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
+
+.panneau_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 2em;
+    margin-top: 1em;
+}
+
+.panneau_2 article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 0;
+}
+
+
+.contact ul li {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.jours ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 0;
+}
+
+.jours ul li {
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+p {
+    font-weight: bolder;
+}
+
+.heure ul li {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.heure ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 0;
+}
+
+.envoyer {
+    margin-top: 2em;
+    width: 100%;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 3px #006A00;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.envoyer input {
+    width: 77em;
+    background-color: #008000;
+    border: solid 1px;
+    height: 2.5em;
+}
